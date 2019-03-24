@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import './style.css'
+import "./style.css";
 
 const dataSource = [
   [
@@ -152,7 +152,7 @@ class Category extends Component {
                 {section.map((item, i) => {
                   return (
                     <div className="category__section" key={i}>
-                      <img className="category__icon" src={item.src} />
+                      <img alt="" className="category__icon" src={item.src} />
                       <div>
                         <span className="category__text">{item.name}</span>
                       </div>
