@@ -1,0 +1,16 @@
+1 容器组件连接Redux时：
+（1）在mapStateToProps中，使用selector函数，对state进行选择，并使用Reselect库优化性能。
+（2）在mapDispatchToProps中，使用bindActionCreators将ActionCreator与dispatch绑定。
+2 <Redirect/>重定向。
+  使用React-Router提供的<Redirect>组件，实现重定向。
+3 路由守卫（登录后才能访问组件）。
+  <Route>组件的render属性，检测用户是否已登陆。若未登录，则重定向到登录页面。
+4 使用函数创建DOM片段（JSX）
+  那些动态的、复杂的DOM片段（JSX），调用函数创建，而不是直接写在render方法中。
+5 Redux-Thunk中间件，处理异步请求。
+6 Redux在Chrome下的开发者工具
+7 多个Reducer对同一个Action作出响应。
+8 组件卸载时，清空Redux中相应的数据。
+9 代码分割。
+  Create React App已经配置好Webpack，当Webpack遇到ECMAScript的dynamic import()语法时，自动进行代码分隔。
+10 项目构件，及在nginx中部署
